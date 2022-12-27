@@ -14,13 +14,18 @@ export const Form = () => {
         'Furia'
     ]
 
+    const toSave = (event) => {
+        event.preventDefault()
+        console.log('Form submetido')
+    }
+
     return (
         <section className='form'>
-            <form>
+            <form onSubmit={toSave}>
                 <h2>Preencha os dados para criar o card do player.</h2>
-                <TextField label = "Nome" placeholder = "Digite o seu nome"/>
-                <TextField label = "Username" placeholder = "Digite o seu nome de usuário"/>
-                <TextField label = "Função" placeholder = "Digite a sua função"/>
+                <TextField required = {true} label = "Nome" placeholder = "Digite o seu nome"/>
+                <TextField required = {true}  label = "Username" placeholder = "Digite o seu nome de usuário"/>
+                <TextField  required = {true} label = "Função" placeholder = "Digite a sua função"/>
                 <TextField label = "Imagem" placeholder = "Informe o endereço da sua imagem"/>
                 <DropDown label="Time" items = {teams} />
                 <Button>
