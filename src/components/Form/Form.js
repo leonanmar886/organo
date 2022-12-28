@@ -4,7 +4,7 @@ import DropDown from '../DropDown'
 import { Button } from '../Button/Button'
 import { useState } from 'react'
 
-export const Form = () => {
+export const Form = (props) => {
 
     const funcs = [
         'Duelista',
@@ -21,7 +21,12 @@ export const Form = () => {
 
     const toSave = (event) => {
         event.preventDefault()
-        console.log('Form submetido =>', name, username, image, funct)
+        props.onPlayerRegistered({
+            name, 
+            username, 
+            image, 
+            funct
+        })
     }
 
     return (
