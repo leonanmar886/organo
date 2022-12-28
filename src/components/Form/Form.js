@@ -13,11 +13,19 @@ export const Form = (props) => {
         'Sentinela', 
         'Coach'
     ]
+    const teams = [
+        'Furia',
+        'Loud',
+        'Cloud9',
+        'Faze',
+        'Optical'
+    ]
 
     const [name, setName] = useState('')
     const [username, setUsername] = useState('')
     const [image, setImage] = useState('')
     const [funct, setFunction] = useState('')
+    const [team, setTeam] = useState('')
 
     const toSave = (event) => {
         event.preventDefault()
@@ -46,6 +54,12 @@ export const Form = (props) => {
                     placeholder = "Digite o seu nome de usuário"
                     value = {username}
                     toChange = {value => setUsername(value)}
+                />
+                <DropDown 
+                    label="Time" 
+                    items = {teams} 
+                    value = {team}
+                    toChange = {value => setTeam(value)}
                 />
                 <TextField 
                     label = "Imagem" 
