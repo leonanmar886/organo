@@ -4,11 +4,11 @@ export const Card = (props) => {
     return (
         <div className='player'>
             <div className='header'>
-                <img src='https://github.com/leonanmar886.png' alt='Leonan Marques'/>
+                <img src={props.image} alt={props.username}/>
             </div>
             <div className='footer'>
-                <h4>Leonan Marques</h4>
-                <h5>Aluno</h5>
+                <h4>{props.username}</h4>
+                <h5>{props.funct}</h5>
             </div>
         </div>
     )

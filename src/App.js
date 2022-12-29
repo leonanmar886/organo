@@ -54,7 +54,9 @@ function App() {
         primaryColor = {team.primaryColor} 
         secondaryColor = {team.secondaryColor} 
         fontColor = {team.fontColor}
-      />)}
+        players = {players.filter(player => player.team === team.name)}
+      />
+      )}
     </div>
   );
 }

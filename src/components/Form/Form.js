@@ -26,7 +26,8 @@ export const Form = (props) => {
             name, 
             username, 
             image, 
-            funct
+            funct, 
+            team
         })
     }
 
