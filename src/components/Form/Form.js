@@ -13,13 +13,6 @@ export const Form = (props) => {
         'Sentinela', 
         'Coach'
     ]
-    const teams = [
-        'Furia',
-        'Loud',
-        'Cloud9',
-        'Liquid',
-        'Optic'
-    ]
 
     const [name, setName] = useState('')
     const [username, setUsername] = useState('')
@@ -57,7 +50,7 @@ export const Form = (props) => {
                 />
                 <DropDown 
                     label="Time" 
-                    items = {teams} 
+                    items = {props.teams} 
                     value = {team}
                     toChange = {value => setTeam(value)}
                 />

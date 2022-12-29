@@ -45,7 +45,9 @@ function App() {
       <Banner />
       <Form onPlayerRegistered = {
         player => setPlayers([...players, player])
-      }/>
+      }
+      teams = {teams.map(team => team.name)}
+      />
       {teams.map(team => 
         <Team name = {team.name} 
         key = {team.name} 
