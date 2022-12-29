@@ -8,7 +8,7 @@ export const Team = (props) => {
                   }
 
     return (
-        <section className='team' style={cssSection}>
+        props.players.length > 0 && <section className='team' style={cssSection}>
             <h3 style={cssH3}>{props.name}</h3>
             <div className = 'players'>
                 {props.players.map( player => (<Card 
