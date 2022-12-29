@@ -17,8 +17,8 @@ export const Form = (props) => {
         'Furia',
         'Loud',
         'Cloud9',
-        'Faze',
-        'Optical'
+        'Liquid',
+        'Optic'
     ]
 
     const [name, setName] = useState('')
