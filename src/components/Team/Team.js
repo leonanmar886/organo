@@ -15,6 +15,7 @@ export const Team = (props) => {
                 username = {player.username}
                 funct = {player.funct}
                 image = {player.image}
+                key = {player.username}
                 />))}
             </div>
         </section>
