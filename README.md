@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt = "Organo Banner" src = "./public/images/banner.png"
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Organo
+## O organo é uma plataforma de gerenciamento de times de Valorant.
 
-## Available Scripts
+# Tópicos
+<p align = "center"> 
+  <a href = "#objetivo">Objetivo</a> •
+  <a href = "#tecnologias">Tecnologias</a> •
+  <a href = "#status">Status do Projeto e Features</a> •
+  <a href = "#pré-requisitos">Pré-Requisitos</a> •
+  <a>Desenvolvedor</a>
+</p>
 
-In the project directory, you can run:
+# Objetivo
+O organo foi desenvolvido como um projeto atrelado a um curso de React, com a finalidade de pôr em práticas as competências desenvolvidas durante o curso, além de servir como uma espécie de local onde eu pudesse testar e me aprofundar na biblioteca.
+A plataforma tem como objetivo a organização de times de Valorant de acordo com a função e o time de cada player.
 
-### `npm start`
+# Tecnologias
+## Front-End
+<ul>
+  <li> JavaScript </li>
+  <li> React </li>
+  <li> Node.js </li>
+  <li> HTML5 </li>
+  <li> CSS3 </li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Status
+👨‍💻 Atualmente o Organo está em desenvolvimento 👨‍💻
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features
+- [ ] Cadastro de Times
+- [ ] Exclusão de players
+- [ ] Exclusão de times
+- [ ] Limitar o número de integrantes de cada time
+- [ ] Validação dos campos
 
-### `npm test`
+# Pré-Requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Executando o projeto localmente
 
-### `npm run build`
+```bash
+# Clone este repositório
+$ git clone <https://github.com/leonanmar886/organo>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd organo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instale as dependências
+$ npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Execute a aplicação
+$ npm init
 
-### `npm run eject`
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Autor
+Eu me chamo Leonan Marques, sou desenvolvedor FullStack e granduando em Ciência da Computação pela Universidade Federal do Ceará (UFC).
+Entre em contato:
+- [![Linkedin Badge](https://img.shields.io/badge/-Leonan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leonan-marques/)](https://www.linkedin.com/in/leonan-marques/) 
+- [![Gmail Badge](https://img.shields.io/badge/-leonan.marques886@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leonan.marques886@gmail.com)](mailto:leonan.marques886@gmail.com)
