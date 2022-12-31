@@ -37,6 +37,7 @@ A plataforma tem como objetivo a organização de times de Valorant de acordo co
 - [ ] Exclusão de times
 - [ ] Limitar o número de integrantes de cada time
 - [ ] Validação dos campos
+- [ ] Migrar para Typescript
 
 # Pré-Requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
