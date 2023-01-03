@@ -41,6 +41,10 @@ function App() {
     }
   ]
 
+  function deletePlayer(){
+    
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -55,7 +59,9 @@ function App() {
         primaryColor = {team.primaryColor} 
         secondaryColor = {team.secondaryColor} 
         fontColor = {team.fontColor}
-        players = {players.filter(player => player.team === team.name)}
+        players = {players.filter(player => player.team ===       
+        team.name)}
+        onDelete = {deletePlayer}
       />
       )}
       <Footer />

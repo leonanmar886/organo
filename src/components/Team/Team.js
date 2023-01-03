@@ -11,11 +11,12 @@ export const Team = (props) => {
         props.players.length > 0 && <section className='team' style={cssSection}>
             <h3 style={cssH3}>{props.name}</h3>
             <div className = 'players'>
-                {props.players.map( player => (<Card 
-                username = {player.username}
-                funct = {player.funct}
-                image = {player.image}
-                key = {player.username}
+                {props.players.map( player => (
+                    <Card username = {player.username}
+                    funct = {player.funct}
+                    image = {player.image}
+                    key = {player.username}
+                    onDelete = {props.onDelete}
                 />))}
             </div>
         </section>
