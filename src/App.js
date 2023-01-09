@@ -8,7 +8,7 @@ function App() {
 
   const [players, setPlayers] = useState([])
 
-  const teams = [
+  const [teams, setTeams] = useState([
     {
       name: 'Furia',
       primaryColor: '#fff',
@@ -39,10 +39,19 @@ function App() {
       secondaryColor: '#0a1723',
       fontColor: '#fff'
     }
-  ]
+  ])
 
   function deletePlayer(){
     
+  }
+
+  function changeColorTeam(color, name){
+    setTeams(teams.map(team => {
+      if(team.name === name){
+        team.secondaryColor = color;
+      }
+      return team
+    }))
   }
 
   return (
@@ -55,6 +64,7 @@ function App() {
       />
       {teams.map(team => 
         <Team name = {team.name} 
+        changeColor = {changeColorTeam}
         key = {team.name} 
         primaryColor = {team.primaryColor} 
         secondaryColor = {team.secondaryColor} 
