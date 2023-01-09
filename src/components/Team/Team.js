@@ -1,8 +1,9 @@
 import Card from '../Card'
 import './Team.css'
+import hexToRgba from 'hex-to-rgba';
 
 export const Team = (props) => {
-    const cssSection = {backgroundColor: props.secondaryColor}
+    const cssSection = {backgroundColor: hexToRgba(props.secondaryColor, '0.97')}
     const cssH3 = {borderColor: props.primaryColor,
                    color: props.fontColor
                   }
@@ -18,6 +19,7 @@ export const Team = (props) => {
                     image = {player.image}
                     key = {player.username}
                     onDelete = {props.onDelete}
+                    cardColor = {props.secondaryColor}
                 />))}
             </div>
         </section>
