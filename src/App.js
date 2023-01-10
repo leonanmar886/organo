@@ -60,13 +60,19 @@ function App() {
     }))
   }
 
+  function registerTeam(newTeam){
+    setTeams([...teams, {id: uuidv4(), ...newTeam }])
+  }
+
   return (
     <div className="App">
       <Banner />
-      <Form onPlayerRegistered = {
-        player => setPlayers([...players, player])
-      }
-      teams = {teams.map(team => team.name)}
+      <Form 
+        registerTeam = {registerTeam}
+        onPlayerRegistered = {
+          player => setPlayers([...players, player])
+        }
+        teams = {teams.map(team => team.name)}
       />
       {teams.map(team => 
         <Team name = {team.name} 
