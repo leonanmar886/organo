@@ -10,7 +10,7 @@ export const Team = (props) => {
 
     return (
         props.players.length > 0 && <section className='team' style={cssSection}>
-            <input onChange={event =>           props.changeColor(event.target.value, props.name)}  value={props.secondaryColor}  type = 'color' className='input-color'/>
+            <input onChange={event =>           props.changeColor(event.target.value, props.id)}  value={props.secondaryColor}  type = 'color' className='input-color'/>
             <h3 style={cssH3}>{props.name}</h3>
             <div className = 'players'>
                 {props.players.map( player => (

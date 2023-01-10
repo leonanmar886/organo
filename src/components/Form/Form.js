@@ -3,6 +3,7 @@ import TextField from '../TextField'
 import DropDown from '../DropDown'
 import { Button } from '../Button/Button'
 import { useState } from 'react'
+import {v4 as uuidv4} from 'uuid';
 
 export const Form = (props) => {
 
@@ -19,10 +20,12 @@ export const Form = (props) => {
     const [image, setImage] = useState('')
     const [funct, setFunction] = useState('')
     const [team, setTeam] = useState('')
+    const id = uuidv4()
 
     const toSave = (event) => {
         event.preventDefault()
         props.onPlayerRegistered({
+            id,
             name, 
             username, 
             image, 
