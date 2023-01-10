@@ -5,8 +5,11 @@ import {AiOutlineClose} from 'react-icons/ai'
 export const Card = (props) => {
     return (
         <div className='player'>
-            <AiOutlineClose size={25} className='delete' onClick=         
-             {props.onDelete}/>
+            <AiOutlineClose 
+                size={25} 
+                className='delete' 
+                onClick = {() => props.onDelete(props.id)}
+            />
             <div className='header' style={{backgroundColor: props.cardColor}}>
                 <img src={props.image} alt={props.username}/>
             </div>

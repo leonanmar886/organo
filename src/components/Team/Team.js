@@ -20,6 +20,7 @@ export const Team = (props) => {
                     key = {player.username}
                     onDelete = {props.onDelete}
                     cardColor = {props.secondaryColor}
+                    id = {player.id}
                 />))}
             </div>
         </section>

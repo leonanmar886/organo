@@ -47,8 +47,8 @@ function App() {
     }
   ])
 
-  function deletePlayer(){
-    
+  function deletePlayer(id){
+    setPlayers(players.filter(player => player.id !== id))
   }
 
   function changeColorTeam(color, id){
